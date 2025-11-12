@@ -30,7 +30,7 @@ class CountdownService : Service() {
         currentCountdown = serviceScope.launch {
             try {
                 for (t in seconds downTo 0) {
-                    Log.i(TAG, "Countdown")
+                    Log.i("Countdown", "$t")
                     delay(1000L)
 
                 }
